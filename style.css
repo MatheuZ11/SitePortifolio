@@ -236,3 +236,88 @@ header{
     transition: all 1s;
     color: rgb(54, 129, 31);
 }
+
+.conhecimentos{
+    font-family: var(--font-secondary);
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(6, 4rem);
+    row-gap: 5rem;
+}
+
+.conhecimento-text{
+    margin-top: 1rem;
+}
+
+.conhecimento-header{
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.conhecimento-header i{
+    color: green;
+    font-size: 2.3rem;
+    margin-right: .7rem;
+}
+
+.conhecimento:nth-child(1){
+    grid-column: 4 / 7;
+    grid-row: 1 / 3;
+}
+
+.conhecimento:nth-child(2){
+    grid-column: 3 / 6;
+    grid-row: 3 / 5;
+}
+
+.conhecimento:nth-child(3){
+    grid-column: 4 / 7;
+    grid-row: 5 / -1;
+}
+
+.conhecimento:nth-child(4){
+    grid-column: 11/ 14;
+    grid-row: 1 / 3;
+}
+
+.conhecimento:nth-child(5){
+    grid-column: 12 / 15;
+    grid-row: 3 / 5;
+}
+
+.conhecimento:nth-child(6){
+    grid-column: 11 / 14;
+    grid-row: 5 / -1;
+}
+
+.sessao-conhecimentos{
+    background-color: rgb(247, 247, 247);
+}
+
+.sessao-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao-header h1{
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    color: black;
+    border-bottom: solid 3px green;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.conhecimento-img-wrapper{
+    grid-column: 6 / 11;
+    grid-row: 2 / 6;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.conhecimento-img-wrapper img{
+    object-fit: cover;
+    width: 110%;
+}
